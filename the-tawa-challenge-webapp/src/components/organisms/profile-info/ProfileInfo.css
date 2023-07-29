@@ -1,0 +1,13 @@
+.form_aligned{
+    
+}
+.profile_info{
+    width: 70vw !important;
+    height: 40vw !important;
+    background-color: transparent;
+    position: inherit;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    
+}

@@ -1,0 +1,23 @@
+.profile_intro{
+    background-color: transparent;
+    margin-top: 1vw;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 65vw;
+    justify-content: space-between;
+}
+.profile_intro_text{
+    width: 40vw;
+}
+.profile_intro h1{
+    color: rgb(15, 27, 156);
+    font-size: 1.5vw;
+    text-align: left;
+}
+.profile_intro h2{
+    margin-top: 0.5vw;
+    color: rgb(66, 66, 66);
+    font-size: 1vw;
+    text-align: left;
+}

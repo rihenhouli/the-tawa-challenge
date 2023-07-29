@@ -1,0 +1,75 @@
+.profile_basic_info_photo_modal_header{
+    display: flex;
+    flex-direction: column;
+}
+.profile_basic_info_photo_modal_title{
+    color:  rgb(32,33,36);
+    font-size: 1.25vw;
+}
+.profile_basic_info_photo_modal_title p{
+    color: rgb(95,99,104);
+    font-size: 1vw;
+}
+
+.profile_basic_info_add_photo_modal_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.profile_basic_info_add_photo_modal_title{
+    color:  rgb(32,33,36);
+    font-size: 1.25vw;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+ }
+.profile_basic_info_add_photo_modal_title p{
+    color: rgb(95,99,104);
+    font-size: 1.5vw !important;
+    text-align: center;
+    padding-left: -3vw; width: 100%;
+}
+.profile_basic_info_change_name_modal_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.profile_basic_info_change_name_modal_title{
+    color:  rgb(32,33,36);
+    font-size: 1.25vw;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+ }
+.profile_basic_info_change_name_modal_title p{
+    color: rgb(95,99,104);
+    font-size: 1.5vw !important;
+    /* text-align: left; */
+    padding-left: 1vw;
+    width: 100%;
+    align-self: center;
+    margin-bottom: 0vw !important ;
+}
+.profile_basic_info_change_birthday_modal_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.profile_basic_info_change_birthday_modal_title{
+    color:  rgb(32,33,36);
+    font-size: 1.25vw;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+ }
+.profile_basic_info_change_birthday_modal_title p{
+    color: rgb(95,99,104);
+    font-size: 1.5vw !important;
+    /* text-align: left; */
+    padding-left: 1vw;
+    width: 100%;
+    align-self: center;
+    margin-bottom: 0vw !important ;
+}

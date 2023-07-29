@@ -1,0 +1,85 @@
+
+input{
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    outline: none;
+}
+.profile_input{
+    margin-top: 0.5%;
+        font-family: Roboto,Arial,sans-serif;;
+        font-size: 2vw;
+        line-height: 1 !important;
+        margin-bottom: 0 !important;
+        width: 100%;
+}
+.registration_input{
+    margin-top: 0.5%;
+        font-family: Roboto,Arial,sans-serif;;
+        font-size: 2vw;
+        line-height: 1 !important;
+        margin-bottom: 0 !important;
+        width: 100%;
+}
+.profile_email_input{
+    margin-top: 0.5%;
+        font-family: Roboto,Arial,sans-serif;;
+        font-size: 2vw;
+        line-height: 1 !important;
+        margin-bottom: 0 !important;
+        width: 100%;
+}
+.profile_email_input:disabled{
+    cursor:not-allowed;
+}
+
+.profil_mail_address_types{
+    width:40%;
+    margin-left: 1.5vw;
+    cursor: pointer;
+    float: right;
+}
+
+.profile_add_email_input{
+    margin-top: 0.5%;
+        font-family: Roboto,Arial,sans-serif;;
+        font-size: 2vw;
+        line-height: 1 !important;
+        margin-bottom: 0 !important;
+        width: 100%;
+
+}
+.profile_add_email_input:disabled{
+    cursor:not-allowed;
+}
+
+.profile_address_input{
+    margin-top: 0.5%;
+        font-family: Roboto,Arial,sans-serif;;
+        font-size: 2vw;
+        line-height: 1 !important;
+        margin-bottom: 0 !important;
+        width: 100%;
+}
+.profile_address_input:disabled{
+    cursor:not-allowed;
+}

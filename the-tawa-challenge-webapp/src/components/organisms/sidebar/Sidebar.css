@@ -1,0 +1,14 @@
+.sidebar{
+    width: 20%;
+    height: 91%;
+    margin-top: 4.1vw;
+    background-color: #c2c6dea1;
+    display: flex;
+    align-items: flex-start;
+    border-radius: 3px;
+    box-shadow: 4px 4px 20px 0px rgba(221, 218, 211, 300);
+    box-sizing: border-box;
+    position: fixed !important;
+    flex-direction: column;
+    margin-right: 5vw;
+}

@@ -1,0 +1,38 @@
+.wrap_article_template{
+    width: 75vw;
+    height: 45vw;
+    margin-top: 5vw; 
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-left: 30vw;
+}
+.add_section_btn_div{
+    width: 10vw;
+    height: 10vh;
+}
+.add_article_btn_list{
+    width: 20vw;
+}
+.wrap_article_template_header{
+    display: flex;
+    flex-direction: row;
+    margin: 1.6vw;
+    justify-content: space-between;
+}
+.add_article_btn_list_label{
+    font-weight: bold;
+    font-size: 2vw;
+}
+.wrap_article_template_overview_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.publish_btn{
+    float: right;
+    width: 10vw;
+    height: 3vw;
+    margin-left: 1vw;
+}

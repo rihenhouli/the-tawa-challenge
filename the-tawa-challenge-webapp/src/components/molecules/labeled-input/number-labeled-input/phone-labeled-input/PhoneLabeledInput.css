@@ -1,0 +1,10 @@
+.add_phone_inputs{
+    display: flex;
+    flex-direction: row !important;
+    justify-content: left !important;
+    width: fit-content !important;
+}
+.add_phone_inputs div{
+    justify-content: left;
+    width: fit-content;
+}

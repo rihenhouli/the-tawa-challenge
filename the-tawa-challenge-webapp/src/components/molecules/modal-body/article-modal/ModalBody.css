@@ -1,0 +1,104 @@
+.profile_basic_info_photo_modal_body {
+  display: flex;
+  justify-content: center;
+  align-content: center !important;
+  align-items: center !important;
+}
+
+.profile_basic_info_add_photo_modal_body {
+  display: flex;
+  justify-content: center;
+  align-content: center !important;
+  align-items: center !important;
+  flex-direction: column;
+}
+.profile_basic_info_change_name_modal_body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 1vw;
+  border: 0.5px rgba(128, 128, 128, 0.29) solid;
+  margin-top: 1vw;
+  width: 98%;
+  align-self: center;
+  padding-right: 0.5vw !important;
+  padding-left: 0.5vw !important;
+  padding-top: 2vw !important;
+}
+.profile_basic_info_change_name_modal_body span {
+  text-align: left;
+}
+.profile_basic_info_change_name_modal_body div {
+  height: fit-content;
+}
+.profile_basic_info_change_birthday_modal_body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 1vw;
+  border: 0.5px rgba(128, 128, 128, 0.29) solid;
+  margin-top: 1vw;
+  width: 98%;
+  align-self: center;
+  padding-right: 0.5vw !important;
+  padding-left: 0.5vw !important;
+  padding-top: 1vw !important;
+}
+.profile_basic_info_change_birthday_modal_body span {
+  text-align: left;
+}
+.profile_basic_info_change_birthday_modal_body div {
+  /* border: 0.5px rgba(128, 128, 128, 0.29) solid !important; */
+}
+
+.profile_basic_info_change_gender_modal_body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 1vw;
+  border: 0.5px rgba(128, 128, 128, 0.29) solid;
+  margin-top: 1vw;
+  width: 98%;
+  align-self: center;
+  padding-right: 0.5vw !important;
+  padding-left: 0.5vw !important;
+  padding-top: 1vw !important;
+  height: fit-content;
+}
+.profile_basic_info_change_gender_modal_body span {
+  text-align: left;
+}
+.profile_basic_info_change_gender_modal_body div {
+  height: fit-content;
+}
+
+.add_article_div {
+  align-items: center !important;
+  align-content: center !important;
+  flex-direction: column;
+  justify-content: center;
+}
+.add_article_single {
+  margin: 2vw 3vw;
+}
+
+.add_article_btn {
+  float: right;
+  margin-right: 3vw;
+}
+
+.add_article_content textarea {
+  height: none !important;
+  height: calc(9.5rem + calc(var(--bs-border-width) * 2)) !important;
+}
+
+.add_article_content label {
+  height: 5vh !important;
+}
+.add_article_image_div {
+  align-items: center !important;
+  align-content: center !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

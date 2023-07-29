@@ -1,0 +1,13 @@
+.manage_pwd_template{
+    align-content: center;
+    display: flex;
+    align-items: center;
+    background-color: rgba(188, 188, 195, 0.269);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.manage_pwd_template_image{
+    width: 50vw;
+    height: 100vh;
+}

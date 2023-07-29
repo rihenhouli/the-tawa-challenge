@@ -1,0 +1,69 @@
+.hp_card_title {
+    color: #333333;
+}
+.login_card_title {
+  font-family: Poppins-Bold;
+  font-size: 5vw;
+  color: #0a2668;
+  margin-bottom: 2vw;
+}
+h2{
+  margin-top: 0% ;
+}
+.navbar_title{
+
+}
+.navbar_title{
+  font-weight: bolder;
+  font-size: large;
+  font-size: 4vw;
+  text-align: center;
+  margin-top: 2vw;
+}
+.login_card_title_fp {
+  font-family: Poppins-Bold;
+  font-size: 2vw;
+  color: black;
+  margin-bottom: 1vw;
+  margin-top: 1vw;
+}
+.profile_title{
+  font-weight: bolder;
+  font-size: large;
+  font-size: 3vw;
+  text-align: center;
+  margin-top: 2vw;
+    width: 80vw;
+}
+.profile_card_title{
+  font-size: 1.3vw;
+  text-align: left;
+}
+.profile_card_item_title{
+  font-size: 0.75vw;
+  text-align: left;
+  color: gray;
+  width: 15vw;
+  font-weight: bold;
+}
+.profile_modal_title{
+  color:  rgb(32,33,36);
+font-size: 1.25vw;
+}
+
+.account_item_card_title {
+  font-family: Poppins-Bold;
+  font-size: 2vw;
+  color: black;
+  background-color: transparent;
+  /* margin-bottom: 1.2vw;
+  padding-top: 0%; */
+}
+
+.article_overview_title {
+  font-family: Poppins-Bold;
+  font-size: 5vw;
+  color: #0a2668;
+  margin-bottom: 2vw;
+  align-self: center;
+}

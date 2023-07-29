@@ -1,0 +1,11 @@
+.page_component{
+    width: 75vw;
+    height: 46vw;
+    float: right;
+    background-color:  rgba(60, 109, 166, 0);
+    /* margin-top: 1vw; */
+    margin-right: 0.5vw;
+    /* border-radius: 3px;
+    box-shadow: 4px 4px 20px 0px rgba(221, 218, 211, 300);
+    box-sizing: border-box; */
+}

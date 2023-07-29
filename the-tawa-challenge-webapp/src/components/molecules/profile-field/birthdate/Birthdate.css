@@ -1,0 +1,23 @@
+.change_date_labeled_input_div {
+  width: 100%;
+  height: fit-content;
+  padding: 1vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.change_date_labeled_input_div span {
+  margin-bottom: 1rem;
+}
+.change_date_button_input {
+  display: flex;
+  flex-direction: row;
+  padding-top: 1vw;
+  justify-content: space-between;
+}
+.change_date_inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+}

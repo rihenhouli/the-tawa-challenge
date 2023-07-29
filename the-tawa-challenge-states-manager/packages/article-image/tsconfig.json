@@ -1,0 +1,11 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "outDir": "./lib",
+        "baseUrl": ".",
+        "paths": {
+            "@cposm/article-image": ["../article-image/src"]
+        }
+      },
+    "include": ["./src"]
+}

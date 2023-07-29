@@ -1,0 +1,10 @@
+.navbar_search{
+    background: transparent;
+    width:29vw;
+    height: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    float: left;
+    margin-right: 20vw;
+}

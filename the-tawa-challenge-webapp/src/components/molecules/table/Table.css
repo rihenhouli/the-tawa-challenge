@@ -1,0 +1,86 @@
+.article_table_row {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+.article_table_row tr {
+  border-radius: 3px;
+  padding: 3px 20px;
+  display: flex;
+  justify-content: left;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.article_table_row td {
+  width: 20%;
+  margin-left: 1vw;
+}
+
+tr {
+  border-radius: 3px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: left;
+  margin-bottom: 15px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1vw;
+}
+td{
+  width: 20%;
+  margin-left: 1vw;
+}
+
+.article_table_row {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+.details_btn{
+  background-color: transparent;
+  border: none;
+  margin-left: 0vw;
+}
+.delete_btn{
+  background-color: transparent;
+  border: none;
+  margin: auto;
+}
+.restore_btn{
+  background-color: transparent;
+  border: none;
+  margin: auto;
+}
+.edit{
+  color: rgb(91, 91, 235);
+  cursor: pointer;
+}
+.details{
+  color: rgb(72, 162, 180);
+  cursor: pointer;  
+}
+.restore{
+  color: rgb(17, 93, 14);
+  cursor: pointer;  
+}
+.buttonTab{
+  display: flex;
+  flex-direction: row;
+  /* margin-left:3.5vw; */
+  width: 1vw;
+}
+.delete{
+  color: rgb(243, 37, 37);
+  cursor: pointer;
+
+}
+.article_category_badge{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-top: 0.4vw;
+  font-size: 0.7vw !important;
+}
+.table-row{
+  
+}

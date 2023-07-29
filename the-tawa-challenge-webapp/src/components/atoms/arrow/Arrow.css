@@ -1,0 +1,8 @@
+.profile_card_arrow{
+    height: 1vw;
+    width: 1vw;
+    background-image:url('https://cdn-icons-png.flaticon.com/512/271/271228.png') ;
+    background-size: cover;
+    display: flex;
+    float: right;
+}

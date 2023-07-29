@@ -1,0 +1,10 @@
+import UserImage from "./models/UserImage";
+declare function uploadData(userImage: FormData): Promise<void>;
+declare function downloadData(filename: string): Promise<UserImage | undefined>;
+declare function updateData(image: UserImage): Promise<void>;
+declare function fetchData(_id: string): Promise<UserImage | undefined>;
+declare function fetchList(): Promise<Array<UserImage>>;
+declare function fetchListByUser(user: string): Promise<UserImage[] | undefined>;
+declare function deleteData(_id: string): Promise<void>;
+declare function restoreData(_id: string): Promise<void>;
+export { uploadData, downloadData, updateData, fetchData, fetchList, fetchListByUser, deleteData, restoreData, };

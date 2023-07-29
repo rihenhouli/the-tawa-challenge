@@ -1,0 +1,31 @@
+.profile_basic_info_add_photo_modal_footer{
+    display: flex;
+    justify-content: center;
+    align-content: center !important;
+}
+.profile_basic_info_photo_modal_footer{
+    display: flex;
+    justify-content: center;
+    align-content: center !important;
+}
+.change_name_modal_footer{
+    margin-top: 2vw;
+    border-top: none !important;
+    justify-content: flex-start !important;
+    width: 100% !important;
+    margin-bottom: 2vw;
+
+}
+.change_birthday_modal_footer{
+    margin-top: 2vw;
+    border-top: none !important;
+    justify-content: flex-start !important;
+    width: 100% !important;
+    margin-bottom: 2vw;
+    display: flex !important;
+    flex-direction: column !important;
+    text-align: start !important;
+}
+.change_birthday_modal_footer h3{
+    text-align: left !important;
+}

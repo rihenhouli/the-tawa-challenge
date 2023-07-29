@@ -1,0 +1,21 @@
+.forgot_password_anchor{
+    text-decoration: none;
+    font-family: Poppins-Bold;
+    padding-top: 1vw;
+    cursor: pointer;
+}
+.forgot_password_anchor:hover{
+    color: blue;
+}
+
+.create_account_anchor{
+    text-decoration: none;
+    font-family: Poppins-Bold;
+    padding-top: 1vw;
+    cursor: pointer;
+    color: darkblue !important;
+    font-style: normal !important;
+}
+.create_account_anchor:hover{
+    color: rgb(255, 221, 0);
+}

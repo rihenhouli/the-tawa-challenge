@@ -1,0 +1,11 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "outDir": "./lib",
+        "baseUrl": ".",
+        "paths": {
+            "@cposm/mail-address": ["../mail-address/src"]
+        }
+      },
+    "include": ["./src"]
+}

@@ -1,0 +1,12 @@
+.add_profile_picture_image_list_div{
+   display: flex;
+   justify-content: left;
+   flex-direction: row;
+   border: 0.5px rgba(128, 128, 128, 0.162) solid ;
+   margin-top: 1vw;
+   width: 90%;
+   overflow-x: scroll;
+   max-width: 90%;
+   align-self: center;
+   background-color: rgba(221, 214, 214, 0.137);
+}

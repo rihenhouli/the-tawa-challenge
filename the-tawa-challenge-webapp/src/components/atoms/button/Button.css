@@ -1,0 +1,239 @@
+.login_button{
+    margin-top: 1.5vw;
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+    text-transform: uppercase;
+    width: 20vw;
+    height: 50px;
+    border-radius: 25px;
+    background: rgb(27, 25, 25);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+    outline: none!important;
+    border: none;
+    /* -webkit-appearance: button; */
+    overflow: visible;
+    touch-action: manipulation;
+    cursor: pointer;
+}
+.login_button:disabled{
+opacity: 0.1;
+cursor: not-allowed;
+}
+/* *, ::after, ::before {
+    box-sizing: inherit;
+} */
+
+.profile_button {
+    margin-top: 4vw;
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+    text-transform: uppercase;
+    width: 20vw;
+    height: 50px;
+    border-radius: 25px;
+    background: rgb(27, 25, 25);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    outline: none !important;
+    border: none;
+    /* -webkit-appearance: button; */
+    overflow: visible;
+    touch-action: manipulation;
+    cursor: pointer;
+  }
+  .close_change_profile_picture {
+    background-image: url("https://cdn-icons-png.flaticon.com/512/9312/9312232.png") !important ;
+    width: 1.5vw;
+    height: 1.5vw;
+    background-color: transparent !important;
+    background-size: cover;
+    align-self: flex-end;
+    border-color: transparent !important;
+    float: right;
+  }
+  .back_add_profile_picture {
+    background-image: url("https://cdn-icons-png.flaticon.com/512/3114/3114883.png") !important ;
+    width: 1.5vw;
+    height: 1.5vw;
+    background-color: transparent !important;
+    background-size: cover;
+    /* align-self: flex-start; */
+    border-color: transparent !important;
+    float: left;
+  }
+  .change_profile_picture {
+    width: 100%;
+    height: 100%;
+    background-color: transparent !important;
+    background-size: cover;
+    align-self: flex-end;
+    border: rgba(128, 128, 128, 0.295) 1px solid !important;
+    color: black !important;
+  }
+  .change_profile_picture:hover {
+    background-color: rgba(128, 128, 128, 0.123) !important;
+    font-weight: 450 !important;
+  }
+  .add_profile_picture {
+    width: 50%;
+    height: 100%;
+    background-color: transparent !important;
+    background-size: cover;
+    align-self: center;
+    border: rgba(128, 128, 128, 0.295) 1px solid !important;
+    color: black !important;
+  }
+  .add_profile_picture:hover {
+    background-color: rgba(128, 128, 128, 0.123) !important;
+    font-weight: 450 !important;
+  }
+  
+  .change_profile_name {
+    width: 50%;
+    height: 100%;
+    background-color: transparent !important;
+    background-size: cover;
+    align-self: center;
+    border: rgba(128, 128, 128, 0.295) 1px solid !important;
+    color: black !important;
+  }
+  .change_profile_name:hover {
+    background-color: rgba(128, 128, 128, 0.123) !important;
+    font-weight: 450 !important;
+  }
+  
+  .change_name {
+    width: 2vw;
+    height: 2vw;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/190/190411.png") !important ;
+    background-size: cover;
+    display: flex;
+    float: right;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    cursor: pointer !important;
+    align-self: center;
+  }
+  .change_name:disabled {
+    opacity: 0 !important;
+  }
+  
+  .change_email {
+    width: fit-content !important;
+  }
+  
+  .change_gender {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    float: right;
+    color: black;
+    cursor: pointer !important;
+    align-self: left !important;
+    margin-top: 0.5% !important;
+  }
+  .change_phone_number {
+    width: fit-content !important;
+  }
+  .change_phone_number_validator {
+    width: 2vw;
+    height: 2vw;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/190/190411.png") !important ;
+    background-size: cover;
+    display: flex;
+    float: right;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    cursor: pointer !important;
+    align-self: center !important;
+    align-items: center;
+  }
+  .change_email {
+    background-image: url("https://cdn-icons-png.flaticon.com/512/1250/1250382.png?w=740&t=st=1676641292~exp=1676641892~hmac=b7bac055a6234cf7f7dd6c796a610f0c638ced98e98bffb042de47f6056696a3");
+    background-size: cover;
+    background-color: transparent !important;
+    border: none !important;
+    width: 2vw;
+    height: 2vw;
+    margin-top: 0.35vw;
+  }
+  .delete_email {
+    background-image: url("https://cdn-icons-png.flaticon.com/512/1214/1214926.png?w=740&t=st=1676641349~exp=1676641949~hmac=638c4892d28dd1c9afbbbb04ccf404752b5480b02391b4bb832a3fab64440798");
+    background-size: cover;
+    background-color: transparent !important;
+    border: none !important;
+    width: 2vw;
+    height: 2vw;
+    margin-top: 0.35vw;
+    margin-left: 0.5vw;
+  }
+  .set_email {
+    font-size: larger !important;
+    font-weight: medium !important;
+    --bs-btn-padding-x: 0.1rem !important;
+    --bs-btn-padding-y: 0.1rem !important;
+    margin-bottom: 2vw;
+  }
+  .set_address {
+    font-size: larger !important;
+    font-weight: medium !important;
+    --bs-btn-padding-x: 0.1rem !important;
+    --bs-btn-padding-y: 0.1rem !important;
+    margin-bottom: 2vw;
+    margin-top: 1vw;
+  }
+  .discard_address {
+    font-size: larger !important;
+    font-weight: medium !important;
+    --bs-btn-padding-x: 0.1rem !important;
+    --bs-btn-padding-y: 0.1rem !important;
+    margin-bottom: 2vw;
+    margin-top: 1vw;
+    float: right !important;
+  }
+
+  .sidebar_button {
+    width: 18vw !important;
+    height: 3vw !important;
+    background-color: transparent !important;
+    color: #292961 !important;
+    font-size: large !important;
+    font-weight: bold !important;
+    border: transparent !important;
+  }
+
+  .sidebar_header_button {
+    width: 15vw !important;
+    height: 3vw !important;
+    background-color: transparent !important;
+    color: #292961 !important;
+    font-size: large !important;
+    font-weight: bold !important;
+    border: transparent !important;
+  }
+  

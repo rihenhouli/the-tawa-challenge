@@ -1,0 +1,12 @@
+.wrap_profile_template{
+    width: 75vw;
+    height: 45vw;
+    /* background-color: rgb(60, 110, 166); */
+    margin-top: 5vw; 
+    background-color: transparent;
+    display: flex;
+    float: right;
+    margin-left: 30vw;
+    /* align-content: center; */
+    /* justify-content: center; */
+}

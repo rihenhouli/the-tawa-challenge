@@ -1,0 +1,39 @@
+.profile_contact_info_change_email_modal_body{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   border-radius: 1vw;
+   border: 0.5px rgba(128, 128, 128, 0.29) solid;
+   margin-top: 1vw;
+   width: 98%;
+   align-self: center;
+   padding-right: 0.5vw !important;
+   padding-left: 0.5vw !important;
+   padding-top: 2vw !important;
+   height: max-content !important;
+}
+.profile_contact_info_change_email_modal_body span{
+text-align: left;
+} 
+.profile_contact_info_change_email_modal_body div{
+ height: fit-content ;
+} 
+.profile_contact_info_change_phone_modal_body{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   border-radius: 1vw;
+   border: 0.5px rgba(128, 128, 128, 0.29) solid;
+   margin-top: 0.5vw;
+   width: 98%;
+   align-self: center;
+   padding-right: 0vw !important;
+   padding-left: 0vw !important;
+   height: max-content !important;
+}
+.profile_contact_info_change_phone_modal_body span{
+text-align: left;
+} 
+.profile_contact_info_change_phone_modal_body div{
+ height: fit-content ;
+} 

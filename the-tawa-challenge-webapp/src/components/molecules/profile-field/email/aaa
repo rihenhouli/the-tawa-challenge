@@ -1,0 +1,212 @@
+import React, { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
+import { ProfileNameHint } from "../../../atoms/span/Span";
+import { getMailAddressState } from "@rihenhouli/ttcsm_mail-address/lib/selectors";
+import { mailAddressActions } from "@rihenhouli/ttcsm_mail-address/lib/state";
+import { listMailAddressTypeData } from "@rihenhouli/ttcsm_mail-address-type/lib/selectors";
+import { listMailAddressData } from "@rihenhouli/ttcsm_mail-address/lib/selectors";
+import { ChangeEmailLabeledInput } from "../../labeled-input/string-labeled-input/email-labeled-input/ChangeEmailLabeledInput";
+import { getAuthState } from "@rihenhouli/ttcsm_auth/lib/selectors";
+import { listConfigurationData } from "@rihenhouli/ttcsm_configurations/lib/selectors";
+import { AddEmailParagraph } from "../../../atoms/paragraph/Paragraph";
+import {
+  AddEmailButton,
+  ChangeEmailButton,
+  ChangeGenderButton,
+} from "../../../atoms/button/Button";
+import { AddEmail } from "./AddEmail";
+
+export const ProfessionalEmail = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    if (
+      professionalAddresses?.length === maxProfessional ||
+      mailAddresses?.length === maxMailAddresses
+    ) {
+      setIsEmailButtonHidden(true);
+      setIsEmailInputHidden(false);
+    } else {
+      setIsEmailButtonHidden(false);
+      setIsEmailInputHidden(false);
+      setIsAddButtonHidden(false)
+    }
+    if (professionalEmail === undefined) {
+      setIsEmailButtonHidden(false);
+      setIsEmailInputHidden(true);
+    }
+  }, []);
+  const authState = useSelector(getAuthState);
+  const userId = authState.userLoggedIn?.userId || -1;
+  const mailAdressState = useSelector(getMailAddressState);
+  const mailAddresses = useSelector(listMailAddressData);
+  const mailAdressesTypes = useSelector(listMailAddressTypeData);
+  const configurationsList = useSelector(listConfigurationData);
+  const professionalTypeId = mailAdressesTypes?.find(
+    (emailType) =>
+      emailType.mailAddressTypeName.toUpperCase() ===
+      "Professional".toUpperCase()
+  )?.mailAddressTypeId;
+  const professionalEmail = mailAddresses?.find(
+    (email) => email.mailAddressTypeId === professionalTypeId
+  );
+  console.log("configurations list web app ", configurationsList);
+  const professionalEmailConfiguration = configurationsList?.find(
+    (config) => config.name === "MaxProfessionalMailAddressesByAccount"
+  );
+  let maxProfessional = professionalEmailConfiguration?.value_in_use;
+  const mailAddressesConfiguration = configurationsList?.find(
+    (config) => config.name === "MaxMailAddressesByAccount"
+  );
+  let maxMailAddresses = mailAddressesConfiguration?.value_in_use;
+  let professionalAddresses = mailAddresses?.filter(
+    (email) => email.mailAddressTypeId === professionalTypeId
+  );
+  const [adminEmail, setEmail] = React.useState(
+    professionalEmail?.mailAddressValue || ""
+  );
+  const email = professionalEmail?.mailAddressValue || "";
+  const [disabledEmail, setDisabledEmail] = React.useState(true);
+  const [isEmailSame, setIsEmailSame] = React.useState(true);
+  const [isEmailValid, setIsEmailValid] = React.useState(false);
+  const [isEmailFocus, setIsEmailFocus] = React.useState(false);
+  const [isEmailBlur, setIsEmailBlur] = React.useState(false);
+  const [emailSpanColor, setLastSpanColor] = useState("gray");
+  const [emailSpanMsg, setLastSpanMsg] = useState("");
+  const [isEmailButtonHidden, setIsEmailButtonHidden] = React.useState(true);
+  const [isAddButtonHidden, setIsAddButtonHidden] = React.useState(true);
+  const [isEmailInputHidden, setIsEmailInputHidden] = React.useState(
+    !isEmailButtonHidden
+  );
+
+  const emailFocusHandler = (event: React.FocusEvent<HTMLInputElement>) => {
+    if (adminEmail === email) {
+      setIsEmailFocus(true);
+      setIsEmailBlur(false);
+      setLastSpanMsg("you may change your professional email");
+      setLastSpanColor("gray");
+    } else {
+      setIsEmailFocus(true);
+      setIsEmailBlur(false);
+      setLastSpanMsg("email format should be like : example@example.example");
+      setLastSpanColor("gray");
+    }
+  };
+
+  // Handling Last name onBlur event
+  const emailBlurHandler = (event: React.FocusEvent<HTMLInputElement>) => {
+    setIsEmailFocus(false);
+    setIsEmailBlur(true);
+    setDisabledEmail(false);
+
+    // Validate entered Email
+    if (adminEmail == "") {
+      setDisabledEmail(true);
+      setIsEmailSame(true);
+      setLastSpanMsg("Professional email is required");
+      setLastSpanColor("red");
+      console.log("test1");
+    } else if (adminEmail == email) {
+      setDisabledEmail(true);
+      setIsEmailSame(true);
+      setLastSpanMsg("");
+      setLastSpanColor("black");
+      console.log("test2");
+    } else if (adminEmail.match(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i)) {
+      setIsEmailSame(false);
+      setDisabledEmail(false);
+      setLastSpanMsg("click the button to save changes!");
+      setLastSpanColor("green");
+      console.log("test3");
+    } else {
+      setIsEmailSame(false);
+      setDisabledEmail(true);
+      setLastSpanMsg("email format entered is invalid!");
+      setLastSpanColor("red");
+      console.log("test4");
+    }
+  };
+  const addEmail = () => {
+    setIsEmailInputHidden(false);
+    setIsEmailButtonHidden(true);
+  };
+  const save = () => {
+    if (professionalEmail != undefined) {
+      const newEmail: any = {
+        mailAddressId: professionalEmail?.mailAddressId,
+        mailAddressValue: adminEmail,
+        mailAddressTypeId: professionalEmail?.mailAddressTypeId,
+        userId: professionalEmail.userId,
+        isDefault: professionalEmail?.isDefault,
+        isActive: professionalEmail?.isActive,
+        createdBy: professionalEmail?.createdBy,
+        creationDate: professionalEmail?.creationDate,
+        updatedBy: JSON.parse(sessionStorage.getItem("userName") || ""),
+        updateDate: new Date(),
+        deletedBy: professionalEmail?.deletedBy,
+        deleteDate: professionalEmail?.deleteDate,
+        isDeleted: professionalEmail?.isDeleted,
+      };
+      console.log("new email", newEmail);
+      dispatch(mailAddressActions.updateMailAddressData(newEmail));
+    } else {
+      const newEmail: any = {
+        mailAddressId: 20,
+        mailAddressValue: adminEmail,
+        mailAddressTypeId: professionalTypeId,
+        userId: userId,
+        isDefault: true,
+        isActive: true,
+        createdBy: JSON.parse(sessionStorage.getItem("userName") || ""),
+        creationDate: new Date(),
+        updatedBy: null,
+        updateDate: new Date(),
+        deletedBy: null,
+        deleteDate: null,
+        isDeleted: false,
+      };
+      console.log("new email", newEmail);
+      dispatch(mailAddressActions.addMailAddressData(newEmail));
+    }
+  };
+  return (
+    <div>
+      <ChangeEmailLabeledInput
+        label={"Professionnal"}
+        type={"text"}
+        onChange={(e) => setEmail(e.target.value)}
+        placeholder={"Professionnal email address"}
+        value={adminEmail}
+        disabled={disabledEmail}
+        onBlur={emailBlurHandler}
+        onFocus={emailFocusHandler}
+        onClick={save}
+        hiddenInput={isEmailInputHidden}
+        hiddenButton={isEmailButtonHidden}
+      ></ChangeEmailLabeledInput>
+      <ChangeEmailButton
+        onClick={save}
+        disabled={disabledEmail}
+        saveChangesButtonHidden={disabledEmail}
+      ></ChangeEmailButton>
+      <ProfileNameHint
+        text={emailSpanMsg}
+        color={emailSpanColor}
+      ></ProfileNameHint>
+            <div
+        className="change_email_button_label"
+        hidden={isEmailButtonHidden}
+      >
+        <AddEmailParagraph
+          text={
+            "The address where your organization can contact you for your activity in your account or if you get locked out you may use it to reset your password."
+          }
+        ></AddEmailParagraph>
+        <AddEmailButton
+          text={"Add Professional email"}
+          onClick={addEmail} hidden={isAddButtonHidden}        ></AddEmailButton>
+      </div>
+      <AddEmail ></AddEmail>
+    </div>
+  );
+};

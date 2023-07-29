@@ -1,0 +1,90 @@
+.login_label {
+  background-color: bisque;
+  width: 30vw;
+  height: 3vw;
+}
+
+.register_label {
+  background-color: #1C4AB2;
+  width: 100%;
+  height: 15%; 
+  font-size: 4vw;
+  font-weight: bolder;
+  text-align: center;
+  color: white;
+}
+
+.register_step_label {
+  background-color: transparent;
+  width: 100%;
+  height: 5%;
+  font-size: 2vw;
+  font-weight: bolder;
+  text-align: center;
+  margin: 1vw;
+}
+.register_item_label {
+  background-color: transparent;
+  height: 5%;
+  font-size: 1.3vw;
+  font-weight: bolder;
+  text-align: center;
+  align-self: center;
+}
+
+.navbar_label {
+  background-color: transparent;
+  font-size: medium;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar_title_label {
+  background-color: transparent;
+  font-size: large;
+  font-weight: bold;
+  color: white;
+  margin-left: 1vw;
+}
+
+.profile_label{
+  color: rgb(18, 26, 63);
+  font-weight: bold;
+  font-size: 1vw;
+  padding-left: 0.2vw;
+}
+.profile_gender_label{
+  margin-top: 1%;
+  color: rgb(18, 26, 63);
+  font-size: 1.8vw;
+  padding-left: 0.2vw;
+  
+}
+.profile_code_label{
+  color: rgb(18, 26, 63);
+  font-size: 1.8vw;
+  text-align: right;
+  margin-top: 80%;
+}
+.profile_email_label{
+  color: rgb(18, 26, 63);
+  font-weight: bold;
+  font-size: 1vw;
+  padding-left: 0.2vw;
+}
+.profile_address_label{
+  color: rgb(18, 26, 63);
+  font-size: 1.5vw;
+  padding-left: 0.2vw;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.add_article_section_image_label {
+  background-color: transparent;
+  height: 5%;
+  font-size: 1.3vw;
+  font-weight: bolder;
+  text-align: center;
+  align-self: center;
+}

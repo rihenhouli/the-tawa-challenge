@@ -1,0 +1,53 @@
+
+.login_page_card_item{
+    border-bottom: 3px gray solid !important;
+}
+
+.registration_page_card_item{
+    border-bottom: 2px gray solid !important;
+    width: 45%;
+    align-content: center;
+    margin-top: 2vw;
+}
+.registration_page_card_item_input_label{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+}
+
+.profile_card_item{
+    font-family: Roboto,Arial,sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    align-items: center;
+    height: 6vw;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px rgba(221, 220, 220, 0.717) solid;
+}
+.profile_card_item:hover{
+    background-color: rgba(186, 184, 184, 0.05);
+}
+
+.profile_card_item ::after{
+    transition: opacity 150ms linear;
+    background-color: rgb(128,134,139);
+    top: calc(50% - 100%);
+    left: calc(50% - 100%);
+    width: 200%;
+    height: 200%;
+}
+.profile_card_image_item{
+    font-family: Roboto,Arial,sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    align-items: center;
+    height: 10vw;
+    display: flex;
+    flex-direction: row !important;
+    border-bottom: 1px rgba(221, 220, 220, 0.717) solid;
+}
+.profile_card_image_item:hover{
+    background-color: rgba(186, 184, 184, 0.05);
+}
+

@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": ["es2019", "es7", "es6", "dom"],
+    "declaration": true,
+    "outDir": "lib",
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "jsx": "react",
+    "baseUrl": "./packages",
+    "paths": {
+     "@rihenhouli/ttcsm_common/*": ["common/src/*"],
+     "@rihenhouli/ttcsm_auth/*": ["auth/src/*"],
+     "@rihenhouli/ttcsm_user/*": ["user/src/*"],
+     "@rihenhouli/ttcsm_user-image/*": ["user-image/src/*"],
+     "@rihenhouli/ttcsm_user-password/*": ["user-password/src/*"],
+     "@rihenhouli/ttcsm_mail-address/*": ["mail-address/src/*"],
+     "@rihenhouli/ttcsm_phone-number/*": ["phone-number/src/*"],
+     "@rihenhouli/ttcsm_global-state/*": ["global-state/src/*"],
+     "@rihenhouli/ttcsm_article/*": ["article/src/*"],
+     "@rihenhouli/ttcsm_article-image/*": ["article-image/src/*"],
+     "@rihenhouli/ttcsm_article-section/*": ["article-section/src/*"],
+    }
+  },
+  "exclude": ["node_modules", "lib"]
+}

@@ -1,0 +1,94 @@
+.login_span_focus_input {
+  display: block;
+  position: absolute;
+  border-radius: 25px;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0;
+  color: rgba(87, 184, 70, 0.8);
+  font-family: Poppins-Regular, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+.login_span_symbol_input {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  border-radius: 25px;
+  bottom: 0;
+  left: 0;
+  width: 30%;
+  height: 5%;
+  padding-left: 35px;
+  pointer-events: none;
+  color: #666;
+  transition: all 0.4s;
+  font-family: Poppins-Regular, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.login_span_symbol_input_tag {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f0e0";
+}
+.login_span_symbol_input_tag:before {
+  content: "\f0e0";
+}
+
+.login_hint {
+  font-family: ‘Myriad Pro’;
+  font-weight: bold;
+  text-align: left;
+  width: 100%;
+}
+
+.registration_hint {
+    font-family: ‘Myriad Pro’;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+  }
+
+.login_hint_fp_password {
+  font-family: ‘Myriad Pro’;
+  font-weight: bold;
+  text-align: center !important;
+  width: fit-content;
+  height: fit-content;
+  margin-bottom: 0.5vw;
+  width: 100%;
+}
+.login_hint_reset_password {
+  font-family: ‘Myriad Pro’;
+  font-weight: bold;
+  text-align: left !important;
+  width: fit-content;
+  height: fit-content;
+  margin-bottom: 0.5vw;
+  margin-left: 3em;
+  width: 100%;
+}
+.name_hint {
+  font-family: ‘Myriad Pro’;
+  font-weight: bold;
+  text-align: left !important;
+  width: fit-content;
+  height: fit-content;
+  margin-bottom: 1vw;
+  width: 100%;
+}

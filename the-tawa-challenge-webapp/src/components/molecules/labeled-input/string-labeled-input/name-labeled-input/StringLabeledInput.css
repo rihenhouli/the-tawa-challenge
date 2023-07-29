@@ -1,0 +1,22 @@
+.change_name_labeled_input_div{
+    width: fit-content;
+    height: 6vw;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    /* border-bottom: rgba(0, 0, 0, 0.084) 1px solid !important; */
+    outline: none;
+    width: 100%;
+}
+.change_name_button_input{
+    width: fit-content;
+    height: 5vw;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    outline: none;
+    width: 100%;
+
+}

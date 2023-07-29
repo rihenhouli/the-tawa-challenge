@@ -1,0 +1,11 @@
+.profile_basic_info_card{
+    background-color: transparent;
+    border: rgba(128, 128, 128, 0.279) 1px solid;
+    border-radius: 0.5vw;
+    margin-top: 1vw;
+    display: flex;
+    flex-direction: column;
+    width: 65vw;
+    height: 30vw;
+    padding: 1vw 1vw 1vw 1vw;
+}

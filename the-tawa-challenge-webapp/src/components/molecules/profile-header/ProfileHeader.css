@@ -1,0 +1,19 @@
+.profile_header{
+    background-color: transparent;
+    margin-top: 1vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.profile_header h1{
+    margin-top: 2vw;
+    color: rgb(7, 7, 39);
+    font-size: 2vw;
+    text-align: center;
+}
+.profile_header h2{
+    margin-top: 0.5vw;
+    color: rgb(78, 78, 192);
+    font-size: 1vw;
+    text-align: center;
+}

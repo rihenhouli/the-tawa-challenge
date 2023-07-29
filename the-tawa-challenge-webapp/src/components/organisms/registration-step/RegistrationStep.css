@@ -1,0 +1,55 @@
+
+.registration_step{
+    width: 70vw !important;
+    height: 40vw !important;
+    background-color: transparent;
+    position: inherit;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    
+}
+.step_button_div{
+    display: flex;
+    margin-top: 5vw;
+}
+
+.birth_date_inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+  }
+  
+  .phone_number_registration_div{
+    margin-top: 3vw;
+  }
+  .phone_number_registration_div input{
+   background-color: transparent !important;
+  }
+
+  .phone_number_registration_div select{
+    background-color: transparent !important;
+   }
+
+   .phone_number_registration_div label{
+    background-color: transparent !important;
+    color: black !important;
+   }
+
+   .registration_step_image_alt{
+    display: flex;
+    flex-direction: row;
+   }
+
+   .registration_step_image_alt label{
+    font-size: 1vw !important;
+    align-self: center !important;
+    height: 1.5vw !important;
+     }
+
+     .registration_step_view_password{
+      width: 1vw;
+      height: 1vw;
+      margin-top: 1vw;
+     }

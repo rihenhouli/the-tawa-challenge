@@ -1,0 +1,32 @@
+{
+  "name": "ttcsm",
+  "version": "0.1.0",
+  "workspaces": [
+    "./packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^7.1.4"
+  },
+  "devDepencies": {
+    "@types/react": "^17.0.0",
+    "@types/redux-saga-tester": "^1.0.4"
+  },
+  "dependencies": {
+    "@rihenhouli/ttcsm_auth": "file:packages\\auth",
+    "@rihenhouli/ttcsm_common": "file:packages\\common",
+    "@rihenhouli/ttcsm_global-state": "file:packages\\global-state",
+    "@rihenhouli/ttcsm_user": "file:packages\\user",
+    "@rihenhouli/ttcsm_user-image": "file:packages\\user-image",
+    "@rihenhouli/ttcsm_user-password": "file:packages\\user-password",
+    "@rihenhouli/ttcsm_mail-address": "file:packages\\mail-address",
+    "@rihenhouli/ttcsm_phone-number": "file:packages\\phone-number",
+    "@rihenhouli/ttcsm_article": "file:packages\\article",
+    "@rihenhouli/ttcsm_article-image": "file:packages\\article-image",
+    "@rihenhouli/ttcsm_article-section": "file:packages\\article-section",
+
+    "redux-saga": "^1.1.3",
+    "typescript": "^4.9.4"
+  },
+  "author": "rihen_houli",
+  "license": "ISC"
+}

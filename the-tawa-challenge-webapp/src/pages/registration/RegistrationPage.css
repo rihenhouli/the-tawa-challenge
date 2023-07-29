@@ -1,0 +1,10 @@
+.registration_page{
+    background-color: rgba(187, 185, 185, 0.495);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

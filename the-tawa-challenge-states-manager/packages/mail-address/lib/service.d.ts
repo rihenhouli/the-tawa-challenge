@@ -1,0 +1,11 @@
+import MailAddress from "./models/MailAddress";
+declare function addData(mailAddress: MailAddress): Promise<void>;
+declare function updateData(mailAddress: MailAddress): Promise<void>;
+declare function fetchData(_id: string): Promise<MailAddress | undefined>;
+declare function fetchDataByValue(email: string): Promise<MailAddress | undefined>;
+declare function declineData(email: string): Promise<MailAddress | undefined>;
+declare function fetchList(): Promise<Array<MailAddress>>;
+declare function fetchListByUser(userId: string): Promise<MailAddress | undefined>;
+declare function deleteData(_id: string): Promise<void>;
+declare function restoreData(id: string): Promise<void>;
+export { updateData, fetchData, fetchDataByValue, fetchList, addData, fetchListByUser, deleteData, restoreData, declineData };

@@ -1,0 +1,40 @@
+.add_email_labeled_input_div{
+    width: fit-content;
+    height: 6vw;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    /* border-bottom: rgba(0, 0, 0, 0.084) 1px solid !important; */
+    outline: none;
+    width: 100%;
+    border-bottom: rgba(0, 0, 0, 0.084) 1px solid !important;
+    margin-top: 1vw;
+}
+.add_email_button_input{
+    width: max-content;
+    height: 5vw;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    outline: none;
+    width: 100%;
+margin-right: 4vw;
+
+
+}
+.add_email_button_label{
+    width: max-content;
+    height: 5vw;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-left: 0.2vw;
+    margin-top: 0.1vw;
+}
+
+.is_main_checkbox{
+    cursor: pointer;
+}

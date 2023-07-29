@@ -1,0 +1,12 @@
+  {
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "outDir": "./lib",
+        "baseUrl": ".",
+        "paths": {
+            "@cposm/common": ["../common/src"]
+        }
+      },
+    "include": ["./src"]
+}
+

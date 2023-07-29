@@ -1,0 +1,14 @@
+.logged_in_page{
+    background-color: transparent;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-inline-end: auto;
+    flex-direction: row;
+    position: sticky !important;
+}
+.dashboard_page_sidebar_outlet{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

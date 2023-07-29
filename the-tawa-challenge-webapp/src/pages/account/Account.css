@@ -1,0 +1,23 @@
+.user_account{
+    width: 70vw;
+    background-color: transparent;
+    margin-left: 24.2vw;
+    padding-top: 5vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.user_account h1{
+    margin-top: 2vw;
+    color: rgb(7, 7, 39);
+    font-size: 2vw;
+    text-align: center;
+}
+.column-2{
+    flex-direction: row;
+    align-content: center;
+    display: flex;
+    justify-content: space-between;
+    width: 65vw;
+
+}

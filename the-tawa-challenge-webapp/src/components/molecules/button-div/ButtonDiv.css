@@ -1,0 +1,49 @@
+.add_profile_picture_div{
+    display: inline;
+    text-align: center;
+    visibility: visible;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    justify-content: center !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    width: 100% !important;
+    border: rgba(128, 128, 128, 0.295) 1px solid !important;
+}
+.add_profile_picture_div:hover{
+    background-color: rgba(128, 128, 128, 0.123) !important;
+    font-weight: 450 !important;
+    cursor: pointer !important;
+}
+.add_profile_phone_number_div{
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar_btn_div{
+    display: inline;
+    text-align: center;
+    visibility: visible;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    justify-content: center !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    width: 100% !important;
+    margin-bottom: 1vw;
+}
+.sidebar_btn_div:hover{
+    background-color: rgba(128, 128, 128, 0.123) !important;
+    font-weight: 450 !important;
+    cursor: pointer !important;
+}
+
+.sidebar_header_div{
+    display: inline;
+    text-align: center;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    justify-content: center !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    width: 100% !important;
+    background-color: rgba(13, 16, 61, 0.338) !important;
+    margin-bottom: 2vw;
+}

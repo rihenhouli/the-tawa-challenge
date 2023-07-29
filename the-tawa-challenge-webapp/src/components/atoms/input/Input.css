@@ -1,0 +1,175 @@
+.login_input{
+    font-family: Poppins-Medium;
+    font-size: 20px;
+    line-height: 1.5;
+    width: 100%;
+    height: 5rem;
+    border-top: black;
+    border-left: black;
+    border-right: black;
+    outline: none;
+}
+.login_input input{
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    outline: none;
+}
+
+.the_registration_input{
+    font-family: Poppins-Medium;
+    font-size: 1vw;
+    line-height: 1.5;
+    width: 40%;
+    height: 2rem;
+    border-top: black;
+    border-left: black;
+    border-right: black;
+    outline: none;
+    background-color: transparent !important;
+    margin-left: 1vw;
+}
+.the_registration_input input{
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    outline: none;
+}
+
+.login_input_forgot_password_username{
+    font-family: Poppins-Medium;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 25vw;
+    height: 50px;
+    outline: none;
+    margin-bottom: 0.2vw;
+    margin-top: 1vw;
+    border: 1px rgba(128, 128, 128, 0.388) solid !important;
+    border-radius: 10px !important;
+    background-color: rgba(128, 128, 128, 0.162);
+}
+.recovery_question_list{
+    display: none !important;
+    text-align: left !important;
+    align-items: flex-start !important;
+    float: left !important;
+    align-self: flex-start !important;
+}
+.login_input_reset_password_password{
+    font-family: Poppins-Medium;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 25vw;
+    height: 50px;
+    outline: none;
+    margin-bottom: 0.2vw;
+    border: 1px rgba(128, 128, 128, 0.388) solid !important;
+    border-radius: 10px !important;
+    background-color: rgba(241, 235, 235, 0.162);}
+    .login_input_reset_password_checkbox{
+        width:1.3rem;
+        height:1.3rem;
+        cursor: pointer;
+
+    }
+    .login_input_reset_password_show_password{
+        float: left !important;
+        display: flex !important;
+        flex-direction: row !important;
+        width: 67%;
+    align-content:flex-start;    }
+    .label_checkbox_login{
+        align-self: center;
+        margin-left: 1% !important; 
+    }
+    
+input{
+    writing-mode: horizontal-tb !important;
+    /* font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: ; */
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 2px;
+    /* border-width: 2px; */
+    border-style: none !important;
+    /* border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133)); */
+    /* border-image: initial; */
+    outline: none;
+    border: none;
+}
+
+.search_input{
+    -webkit-appearance: none;
+    appearance: none;
+    background-clip: padding-box;
+    /* background-color: var(--cui-input-bg,#fff); */
+    /* border: 1px solid var(--cui-input-border-color,rgb(18, 26, 63)); */
+    border-radius: 0.375rem;
+    color: var(--cui-input-color,rgb(18, 26, 63));
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.375rem 0.75rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    width: 25vw;
+}
+
+.article_category_input{
+    display: flex !important;
+}
